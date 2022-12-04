@@ -328,15 +328,15 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         }
     }
     private boolean checkFields(){
-        if(etBname.getText().toString().trim().length()==0){
+        if(etBname.getText().toString().trim().length()<=0){
             etBname.setError(getText(R.string.check_bname));
             return false;
         }
-        if(etBauthor.getText().toString().trim().length()==0){
+        if(etBauthor.getText().toString().trim().length()<=0){
             etBauthor.setError(getText(R.string.check_bauthor));
             return false;
         }
-        if (etBprice.getText().toString().trim().length()==0){
+        if (etBprice.getText().toString().trim().length()<=0){
             etBprice.setError(getText(R.string.check_bprice));
             return false;
         }
