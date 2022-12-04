@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Book Management</string>
+    <!--main login-->
+    <string name="logintitle">LOGIN</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="signin">SIGN IN</string>
+    <string name="success">Login successfully</string>
+    <string name="fail">Wrong Username or Passrowd</string>
+    <!--book/category list-->
+    <string name="newcat">NEW CATEGORY</string>
+    <string name="newbook">NEW BOOK</string>
+    <string name="b_list">Book List</string>
+    <string name="c_list">Category List</string>
+    <!--book/category detail-->
+    <string name="cattitle">Category Detail</string>
+    <string name="booktitle">Book Detail</string>
+    <string name="add">ADD</string>
+    <string name="edit">EDIT</string>
+    <string name="img">SELECT IMAGE</string>
+    <!--items-->
+    <string name="c_id">Category ID:</string>
+    <string name="c_name">C.Name:</string>
+    <string name="b_id">Book ID:</string>
+    <string name="b_name">B.Name:</string>
+    <string name="b_category">Category:</string>
+    <string name="b_author">Book Author:</string>
+    <string name="b_price">Book Price:</string>
+    <!--about-->
+    <string name="title">Pesonal Info</string>
+    <string name="ten">Name:</string>
+    <string name="lop">Class:</string>
+    <string name="mssv">Stu ID:</string>
+    <string name="email">Email:</string>
+    <string name="sdt">Phone:</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW52aW5obHVvbmciLCJhIjoiY2w5bTcwcjJpMmM4djNwbW5waWZpYWRmdCJ9.9D7BI7KYGE9zqlxw8KcLUw</string>
+    <!--menu-->
+    <string name="about">About</string>
+    <string name="exit">Quit</string>
+    <!--notify-->
+    <string name="n_add">Add success</string>
+    <string name="n_edit">Edit success</string>
+    <string name="n_del_s">Delete success</string>
+    <string name="n_del_f">Delete failed because data already exists</string>
+    <string name="check_bname">Please enter the book title</string>
+    <string name="check_bauthor">Please enter the author of the book</string>
+    <string name="check_bprice">Please enter the price </string>
+    <string name="check_cname">Please enter the category name</string>
+</resources>

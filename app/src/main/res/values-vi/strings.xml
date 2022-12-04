@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quản lý sách</string>
+    <!--main login-->
+    <string name="logintitle">Đăng nhập</string>
+    <string name="username">Tài khoản:</string>
+    <string name="password">Mật khẩu:</string>
+    <string name="signin">Đăng Nhập</string>
+    <string name="success">Đăng nhập thành công </string>
+    <string name="fail">Sai tài khoản hoặc mật khẩu</string>
+    <!--book/category list-->
+    <string name="newcat">Thêm thể loại mới</string>
+    <string name="newbook">Thêm sách mới</string>
+    <string name="b_list">Danh sách sách</string>
+    <string name="c_list">Danh sách thể loại</string>
+    <!--book/category detail-->
+    <string name="cattitle">Chi tiết thể loại</string>
+    <string name="booktitle">Chi tiết sách</string>
+    <string name="add">Thêm</string>
+    <string name="edit">Sửa</string>
+    <string name="img">Chọn ảnh</string>
+    <!--items-->
+    <string name="c_id"> Mã loại:</string>
+    <string name="c_name">Tên loại:</string>
+    <string name="b_id">Mã sách:</string>
+    <string name="b_name">Tên sách:</string>
+    <string name="b_category">Thể loại:</string>
+    <string name="b_author">Tác giả:</string>
+    <string name="b_price">Giá:</string>
+    <!--about-->
+    <string name="title">Thông tin cá nhân</string>
+    <string name="ten">Tên:</string>
+    <string name="lop">Lớp:</string>
+    <string name="mssv">MSSV:</string>
+    <string name="email">Email:</string>
+    <string name="sdt">SĐT:</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYW52aW5obHVvbmciLCJhIjoiY2w5bTcwcjJpMmM4djNwbW5waWZpYWRmdCJ9.9D7BI7KYGE9zqlxw8KcLUw</string>
+    <!--menu-->
+    <string name="about">Giới thiệu</string>
+    <string name="exit">Thoát</string>
+    <!--notify-->
+    <string name="n_add">Thêm thành công</string>
+    <string name="n_edit">Sửa thành công</string>
+    <string name="n_del_s">Xóa thành công</string>
+    <string name="n_del_f">Xóa thất bại vì đã tồn tại dữ liệu</string>
+    <string name="check_bname">Vui lòng nhập tên sách</string>
+    <string name="check_bauthor">Vui lòng nhập tên tác giả của cuốn sách</string>
+    <string name="check_bprice">Vui lòng nhập giá</string>
+    <string name="check_cname">Vui lòng nhập tên danh mục</string>
+</resources>
