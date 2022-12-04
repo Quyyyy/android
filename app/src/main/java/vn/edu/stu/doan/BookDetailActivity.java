@@ -51,7 +51,6 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
     ArrayList<Book> ds;
     ArrayList<Category> ds2;
     ArrayList<String> dsloai;
-    String[] arr;
     String imgSelected="";
     int SELECT_PICTURE = 200;
 
@@ -85,9 +84,6 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         for (Category c:ds2) {
             dsloai.add(c.getcName());
         }
-        String[] arr=new String[dsloai.size()];
-        arr = dsloai.toArray(arr);
-
         spinBcategory.setOnItemSelectedListener(this);
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,ds2);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -342,6 +338,10 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         }
         if (etBprice.getText().toString().trim().length()==0){
             etBprice.setError(getText(R.string.check_bprice));
+            return false;
+        }
+        if(imgSelected.trim().length()==0){
+            Toast.makeText(this, R.string.check_bimg, Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;

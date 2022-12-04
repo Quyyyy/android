@@ -46,5 +46,6 @@
     <string name="check_bname">Vui lòng nhập tên sách</string>
     <string name="check_bauthor">Vui lòng nhập tên tác giả của cuốn sách</string>
     <string name="check_bprice">Vui lòng nhập giá</string>
+    <string name="check_bimg">Vui lòng chọn ảnh cho sách</string>
     <string name="check_cname">Vui lòng nhập tên danh mục</string>
 </resources>

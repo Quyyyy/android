@@ -45,5 +45,6 @@
     <string name="check_bname">Please enter the book title</string>
     <string name="check_bauthor">Please enter the author of the book</string>
     <string name="check_bprice">Please enter the price </string>
+    <string name="check_bimg">Please select the book image</string>
     <string name="check_cname">Please enter the category name</string>
 </resources>
