@@ -5,52 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="30pt">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/logintitle"
-        android:textSize="14pt"
+        android:textSize="15pt"
         android:layout_margin="4pt"
-        android:layout_gravity="center"></TextView>
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"></TextView>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="120pt"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="2pt"
         android:padding="2pt">
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/username"
             android:textSize="10pt"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"
+            android:textColor="@color/black"></TextView>-->
         <EditText
             android:id="@+id/etTaiKhoan"
-            android:inputType="text"
-            android:text="admin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:inputType="text"
+            android:background="@drawable/bg"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"></EditText>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="120pt"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="2pt"
         android:padding="2pt">
-        <TextView
+        <EditText
+            android:id="@+id/etMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:background="@drawable/bg"></EditText>
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/password"
             android:textSize="10pt"
-            android:textStyle="bold"></TextView>
-        <EditText
-            android:id="@+id/etMatKhau"
-            android:inputType="textPassword"
-            android:text="admin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></EditText>
+            android:textStyle="bold"
+            android:textColor="@color/black"></TextView>-->
     </LinearLayout>
 
     <Button
@@ -58,7 +71,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="11pt"
-        android:text="@string/signin"></Button>
+        android:textSize="12pt"
+        android:text="@string/signin"
+        android:layout_marginTop="10pt"
+        android:textColor="@color/black"></Button>
 
 </LinearLayout>

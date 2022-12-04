@@ -30,6 +30,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 import vn.edu.stu.doan.adapter.BookAdapter;
@@ -42,7 +44,7 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
     final String DB_NAME = "dbBook.db";
     final String DB_PATH_SUFIX = "/databases/";
 
-    Button btnEdit,btnImage;
+    Button btnEdit;
     EditText etBid,etBname,etBauthor,etBprice;
     ImageView ivBimage;
     Spinner spinBcategory;
@@ -98,7 +100,8 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
                 int ma=book.getbID();
                 String ten=book.getbName();
                 String tacgia= book.getbAuthor();
-                int gia= book.getbPrice();
+                NumberFormat formater=new DecimalFormat("#,###");
+                String gia= formater.format(book.getbPrice());
                 String hinh=book.getbImage();
                 imgSelected=hinh;
                 Category c= (Category) spinBcategory.getSelectedItem();
@@ -139,7 +142,7 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
                 }
             }
         });
-        btnImage.setOnClickListener(new View.OnClickListener() {
+        ivBimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 imageChooser();
@@ -155,7 +158,6 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         ivBimage=findViewById(R.id.ivBimage);
         spinBcategory= findViewById(R.id.spinBcategory);
         btnEdit=findViewById(R.id.btnEdit);
-        btnImage=findViewById(R.id.btnImage);
 
         ds2=new ArrayList<>();
         ds=new ArrayList<>();
@@ -229,7 +231,7 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         int loai=ds2.get(spinBcategory.getSelectedItemPosition()).getcId();
         String hinh=getImage(imgSelected);
         String tacGia=etBauthor.getText().toString();
-        int gia= Integer.parseInt(etBprice.getText().toString());
+        int gia= Integer.parseInt(etBprice.getText().toString().replace(",",""));
 
         SQLiteDatabase database = openOrCreateDatabase(DB_NAME, MODE_PRIVATE, null);
         ContentValues row = new ContentValues();
@@ -250,7 +252,7 @@ public class BookDetailActivity extends AppCompatActivity implements AdapterView
         int loai=ds2.get(spinBcategory.getSelectedItemPosition()).getcId();
         String hinh = imgSelected;
         String tacGia=etBauthor.getText().toString();
-        int gia= Integer.parseInt(etBprice.getText().toString());
+        int gia= Integer.parseInt(etBprice.getText().toString().replace(",",""));
         SQLiteDatabase database = openOrCreateDatabase(DB_NAME, MODE_PRIVATE, null);
         ContentValues row = new ContentValues();
         row.put("bName", ten);

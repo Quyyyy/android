@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(etTaiKhoan.getText().toString().equals("admin")&&etMatKhau.getText().toString().equals("admin")){
+                if(etTaiKhoan.getText().toString().equals("admin")&&etMatKhau.getText().toString().equals("123")){
                     Intent intent = new Intent(MainActivity.this,CategoryListActivity.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity.this,R.string.success, Toast.LENGTH_SHORT).show();

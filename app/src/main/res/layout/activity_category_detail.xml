@@ -18,36 +18,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="2pt">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/c_id"
-            android:gravity="center_vertical"></TextView>
+            android:gravity="center_vertical"
+            android:textSize="8pt"
+            android:textColor="@color/black"></TextView>
 
         <EditText
             android:id="@+id/etCid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="false"
-            android:focusable="false"></EditText>
+            android:focusable="false"
+            android:textSize="8pt"></EditText>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="2pt">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/c_name"
-            android:gravity="center_vertical"></TextView>
+            android:gravity="center_vertical"
+            android:textSize="8pt"
+            android:textColor="@color/black"></TextView>
 
         <EditText
             android:id="@+id/etCname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"></EditText>
+            android:inputType="text"
+            android:textSize="8pt"></EditText>
     </LinearLayout>
 
     <Button
@@ -56,6 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="8pt"
         android:layout_marginTop="4pt"></Button>
 
 </LinearLayout>

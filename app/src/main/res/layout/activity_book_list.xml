@@ -13,7 +13,8 @@
         android:text="@string/b_list"
         android:textSize="14pt"
         android:layout_margin="4pt"
-        android:layout_gravity="center"></TextView>
+        android:layout_gravity="center"
+        android:textColor="@color/black"></TextView>
 
     <Button
         android:id="@+id/btnAdd"
@@ -21,11 +22,14 @@
         android:layout_height="wrap_content"
         android:text="@string/newbook"
         android:textSize="8pt"
-        android:layout_gravity="center"></Button>
+        android:layout_gravity="center"
+        android:layout_margin="4pt"
+        android:textColor="@color/black"></Button>
 
     <ListView
         android:id="@+id/lvBookList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:layout_margin="2pt"></ListView>
 
 </LinearLayout>
