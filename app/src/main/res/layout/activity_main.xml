@@ -37,6 +37,7 @@
             android:layout_height="match_parent"
             android:hint="Username"
             android:inputType="text"
+            android:text="admin"
             android:background="@drawable/bg"
             android:textColorHint="@color/black"
             android:textColor="@color/black"></EditText>
@@ -53,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"
+            android:text="123"
             android:hint="Password"
             android:textColorHint="@color/black"
             android:textColor="@color/black"

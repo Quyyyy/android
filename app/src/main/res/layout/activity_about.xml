@@ -90,8 +90,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="8pt"
                 android:autoLink="phone"
-                android:clickable="true"
-                android:text="0522966134"></TextView>
+                android:text="0522966134"
+                android:textColorLink="@color/saphire"></TextView>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:layout_width="match_parent"
