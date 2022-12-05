@@ -18,7 +18,7 @@
     <ImageView
         android:id="@+id/ivBimage"
         android:layout_width="match_parent"
-        android:layout_height="110pt"
+        android:layout_height="100pt"
         android:layout_gravity="center"
         android:layout_marginBottom="3pt"></ImageView>
 
